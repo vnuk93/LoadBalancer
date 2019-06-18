@@ -6,6 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using DMModel = LoadBalancer.MLoadBalancer;
+
+
 namespace LoadBalancer
 {
     class MainCore
@@ -38,13 +41,13 @@ namespace LoadBalancer
             return data;
 
         }
-        // FALTA ES BUSCAR POR CAMPO? ESTA EN QUERY       
-
+          
         public DMModel ReadId(string id)
         {
             return db.Get(ObjectId.Parse(id));
         }
 
+        // FALTA ES BUSCAR POR CAMPO? ESTA EN QUERY     
         //public List<DMModel> ReadValue(string fieldName, string fieldValue)
         //{
 
