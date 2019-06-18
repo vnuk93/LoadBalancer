@@ -13,8 +13,11 @@ namespace LoadBalancer
     {
         [BsonId]
         public ObjectId _id { get; set; }
+        [BsonIgnoreIfNull]
         public string typeService { get; set; }
+        [BsonIgnoreIfNull]
         public string url { get; set; }
+        [BsonIgnoreIfNull]
         public int status { get; set; }
     }
 }
